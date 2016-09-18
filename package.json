@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-tradeshift",
+  "version": "1.0.1",
+  "description": "Javascript styleguide for Tradeshift",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Søren Louv-Jansen <sorenlouv@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sqren/eslint-config-tradeshift.git"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "style guide",
+    "lint",
+    "tradeshift",
+    "es6",
+    "es2015",
+    "javascript"
+  ],
+  "license": "ISC"
+}
