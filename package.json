@@ -1,28 +1,62 @@
 {
-  "name": "eslint-config-tradeshift",
-  "version": "1.0.1",
-  "description": "Javascript styleguide for Tradeshift",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Søren Louv-Jansen <sorenlouv@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sqren/eslint-config-tradeshift.git"
-  },
-  "peerDependencies": {
-    "eslint": ">= 3"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "style guide",
-    "lint",
-    "tradeshift",
-    "es6",
-    "es2015",
-    "javascript"
-  ],
-  "license": "ISC"
+	"name": "eslint-config-tradeshift",
+	"description": "Javascript Tradeshift Style - ESLint Shareable Config",
+	"version": "2.0.0",
+	"author": "Tradeshift <noreply@tradeshift.com>",
+	"contributors": [
+		"Daniel Spitzer <dsp@tradeshift.com>",
+		"Søren Louv-Jansen <slo@tradeshift.com>"
+	],
+	"bugs": {
+		"url": "https://github.com/Tradeshift/eslint-config-tradeshift/issues"
+	},
+	"devDependencies": {
+		"eslint": "^3.1.1",
+		"eslint-config-standard": "^6.2.0",
+		"eslint-plugin-promise": "^2.0.0",
+		"eslint-plugin-standard": "^2.0.0",
+		"tape": "^4.6.0"
+	},
+	"homepage": "https://github.com/Tradeshift/eslint-config-tradeshift",
+	"keywords": [
+		"JavaScript Tradeshift Style",
+		"check",
+		"checker",
+		"code",
+		"code checker",
+		"code linter",
+		"code standards",
+		"code style",
+		"enforce",
+		"eslint",
+		"eslintconfig",
+		"hint",
+		"jscs",
+		"jshint",
+		"lint",
+		"policy",
+		"quality",
+		"simple",
+		"style",
+		"style checker",
+		"style linter",
+		"verify",
+		"javascript",
+		"tradeshift",
+		"es6",
+		"es2016"
+	],
+	"license": "ISC",
+	"main": "index.js",
+	"peerDependencies": {
+		"eslint": ">=3.0.0",
+		"eslint-config-standard": ">=6.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Tradeshift/eslint-config-tradeshift.git"
+	},
+	"scripts": {
+		"test": "tape test/*.js"
+	}
 }
