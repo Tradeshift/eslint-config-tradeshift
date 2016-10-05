@@ -1,0 +1,39 @@
+{
+	"extends": "standard",
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true,
+		"jasmine": true
+	},
+	"globals": {
+		"t": true,
+		"ts": true,
+		"gui": true,
+		"app": true,
+		"__app": true,
+		"__config": true,
+		"runtime": true,
+		"server": true
+	},
+	"rules": {
+		"array-bracket-spacing": [2, "never"],
+		"block-scoped-var": 1,
+		"camelcase": [1, { "properties": "never" }],
+		"dot-notation": 2,
+		"eqeqeq": [2, "always"],
+		"guard-for-in": 2,
+		"indent": [2, "tab", { "SwitchCase": 2 }],
+		"keyword-spacing": [2, { "before": true, "after": true }],
+		"linebreak-style": 2,
+		"no-empty": [2, { "allowEmptyCatch": true }],
+		"no-invalid-this": 2,
+		"no-loop-func": 2,
+		"no-script-url": 2,
+		"no-shadow": 2,
+		"no-var": 0,
+		"quote-props": [2, "as-needed", { "keywords": true }],
+		"semi": [2, "always"],
+		"space-before-function-paren": [2, "never"]
+	}
+}
