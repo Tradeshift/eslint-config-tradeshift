@@ -1,4 +1,4 @@
-# Standard - ESLint Shareable Config
+# Tradeshift - ESLint Shareable Config
 [![travis][travis-image]][travis-url]
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
