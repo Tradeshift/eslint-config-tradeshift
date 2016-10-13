@@ -32,7 +32,6 @@
 		"no-shadow": 2,
 		"no-tabs": 0,
 		"no-template-curly-in-string": 0,
-		"no-useless-call": 0,
 		"no-var": 0,
 		"operator-linebreak": [2, "after"],
 		"quote-props": [2, "as-needed", { "keywords": true }],
