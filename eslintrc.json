@@ -31,6 +31,7 @@
 		"no-script-url": 2,
 		"no-shadow": 2,
 		"no-tabs": 0,
+		"no-template-curly-in-string": 1,
 		"no-var": 0,
 		"quote-props": [2, "as-needed", { "keywords": true }],
 		"semi": [2, "always"],
