@@ -34,6 +34,7 @@
 		"no-template-curly-in-string": 1,
 		"no-throw-literal": 1,
 		"no-var": 0,
+		"operator-linebreak": [2, "after"],
 		"quote-props": [2, "as-needed", { "keywords": true }],
 		"semi": [2, "always"],
 		"space-before-function-paren": [2, "never"]
