@@ -27,7 +27,6 @@
 		"keyword-spacing": [2, { "before": true, "after": true }],
 		"linebreak-style": 2,
 		"no-empty": [2, { "allowEmptyCatch": true }],
-		"no-invalid-this": 2,
 		"no-loop-func": 2,
 		"no-script-url": 2,
 		"no-shadow": 2,
