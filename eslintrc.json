@@ -18,8 +18,8 @@
 	},
 	"rules": {
 		"array-bracket-spacing": [2, "never"],
-		"block-scoped-var": 1,
-		"camelcase": [1, { "properties": "never" }],
+		"block-scoped-var": 2,
+		"camelcase": [2, { "properties": "never" }],
 		"dot-notation": 2,
 		"eqeqeq": [2, "always"],
 		"guard-for-in": 2,
