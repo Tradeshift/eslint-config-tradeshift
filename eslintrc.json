@@ -1,21 +1,5 @@
 {
 	"extends": "standard",
-	"env": {
-		"es6": true,
-		"browser": true,
-		"node": true,
-		"jasmine": true
-	},
-	"globals": {
-		"t": true,
-		"ts": true,
-		"gui": true,
-		"app": true,
-		"__app": true,
-		"__config": true,
-		"runtime": true,
-		"server": true
-	},
 	"rules": {
 		"array-bracket-spacing": [2, "never"],
 		"block-scoped-var": 2,
