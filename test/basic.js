@@ -3,8 +3,6 @@ var test = require('tape');
 
 test('test basic properties of config', function(t) {
 	t.ok(isString(config.extends));
-	t.ok(isObject(config.env));
-	t.ok(isObject(config.globals));
 	t.ok(isObject(config.rules));
 	t.end();
 });
