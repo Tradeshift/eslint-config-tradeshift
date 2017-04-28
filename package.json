@@ -1,60 +1,60 @@
 {
-	"name": "eslint-config-tradeshift",
-	"description": "Javascript Tradeshift Style - ESLint Shareable Config",
-	"version": "4.0.0-alpha.0",
-	"author": "Tradeshift <noreply@tradeshift.com>",
-	"contributors": [
-		"Daniel Spitzer <dsp@tradeshift.com>",
-		"Søren Louv-Jansen <slo@tradeshift.com>",
-		"Jacob Wejendorp <jwe@tradeshift.com>"
-	],
-	"bugs": {
-		"url": "https://github.com/Tradeshift/eslint-config-tradeshift/issues"
-	},
-	"devDependencies": {
-		"tape": "^4.6.0"
-	},
-	"dependencies": {
-		"eslint": "^3.19.0",
-		"eslint-plugin-prettier": "^2.0.1",
-		"prettier": "^1.2.2"
-	},
-	"homepage": "https://github.com/Tradeshift/eslint-config-tradeshift",
-	"keywords": [
-		"JavaScript Tradeshift Style",
-		"check",
-		"checker",
-		"code",
-		"code checker",
-		"code linter",
-		"code standards",
-		"code style",
-		"enforce",
-		"eslint",
-		"eslintconfig",
-		"hint",
-		"jscs",
-		"jshint",
-		"lint",
-		"policy",
-		"quality",
-		"simple",
-		"style",
-		"style checker",
-		"style linter",
-		"verify",
-		"javascript",
-		"tradeshift",
-		"es6",
-		"es2016"
-	],
-	"license": "ISC",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Tradeshift/eslint-config-tradeshift.git"
-	},
-	"scripts": {
-		"test": "tape test/*.js"
-	}
+  "name": "eslint-config-tradeshift",
+  "description": "Javascript Tradeshift Style - ESLint Shareable Config",
+  "version": "4.0.0-alpha.1",
+  "author": "Tradeshift <noreply@tradeshift.com>",
+  "contributors": [
+    "Daniel Spitzer <dsp@tradeshift.com>",
+    "Søren Louv-Jansen <slo@tradeshift.com>",
+    "Jacob Wejendorp <jwe@tradeshift.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/Tradeshift/eslint-config-tradeshift/issues"
+  },
+  "devDependencies": {
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "prettier": "^1.2.2"
+  },
+  "homepage": "https://github.com/Tradeshift/eslint-config-tradeshift",
+  "keywords": [
+    "JavaScript Tradeshift Style",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "eslint",
+    "eslintconfig",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "style",
+    "style checker",
+    "style linter",
+    "verify",
+    "javascript",
+    "tradeshift",
+    "es6",
+    "es2016"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tradeshift/eslint-config-tradeshift.git"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  }
 }
