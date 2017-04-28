@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-tradeshift",
 	"description": "Javascript Tradeshift Style - ESLint Shareable Config",
-	"version": "3.0.0",
+	"version": "4.0.0-alpha.0",
 	"author": "Tradeshift <noreply@tradeshift.com>",
 	"contributors": [
 		"Daniel Spitzer <dsp@tradeshift.com>",
