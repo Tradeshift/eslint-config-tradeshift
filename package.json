@@ -12,10 +12,12 @@
 		"url": "https://github.com/Tradeshift/eslint-config-tradeshift/issues"
 	},
 	"devDependencies": {
+		"tape": "^4.6.0"
+	},
+	"dependencies": {
 		"eslint": "^3.19.0",
 		"eslint-plugin-prettier": "^2.0.1",
-		"prettier": "^1.2.2",
-		"tape": "^4.6.0"
+		"prettier": "^1.2.2"
 	},
 	"homepage": "https://github.com/Tradeshift/eslint-config-tradeshift",
 	"keywords": [
