@@ -1,15 +1,15 @@
 {
-	"extends": "prettier",
+	"extends": "pretty-standard",
 	"rules": {
-		"block-scoped-var": 2,
-		"camelcase": [2, { "properties": "never" }],
-		"dot-notation": 2,
-		"eqeqeq": [2, "always"],
-		"guard-for-in": 2,
-		"no-empty": [2, { "allowEmptyCatch": true }],
-		"no-loop-func": 2,
-		"no-script-url": 2,
-		"no-shadow": 2,
-		"quote-props": [2, "as-needed", { "keywords": true }]
+		"block-scoped-var": "error",
+		"camelcase": ["error", { "properties": "never" }],
+		"dot-notation": "error",
+		"eqeqeq": ["error", "always"],
+		"guard-for-in": "error",
+		"no-empty": ["error", { "allowEmptyCatch": true }],
+		"no-loop-func": "error",
+		"no-script-url": "error",
+		"no-shadow": "error",
+		"quote-props": ["error", "as-needed", { "keywords": true }]
 	}
 }
