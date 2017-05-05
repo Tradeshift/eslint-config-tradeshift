@@ -10,6 +10,7 @@
 		"no-loop-func": "error",
 		"no-script-url": "error",
 		"no-shadow": "error",
+		"no-tabs": "off",
 		"quote-props": ["error", "as-needed", { "keywords": true }]
 	}
 }
