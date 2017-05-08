@@ -11,6 +11,7 @@
 		"no-empty": ["error", { "allowEmptyCatch": true }],
 		"no-loop-func": "error",
 		"no-script-url": "error",
-		"no-tabs": "off"
+		"no-tabs": "off",
+		"standard/computed-property-even-spacing": "off"
 	}
 }
