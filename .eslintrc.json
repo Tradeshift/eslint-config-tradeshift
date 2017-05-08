@@ -1,5 +1,8 @@
 {
-	"extends": "pretty-standard",
+	"extends": [
+		"standard",
+		"prettier"
+	],
 	"rules": {
 		"block-scoped-var": "error",
 		"dot-notation": "error",
