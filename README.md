@@ -44,6 +44,10 @@ Then, add this to your .eslintrc file:
 You can override settings from the shareable config by adding them directly into your
 `.eslintrc` file.
 
+## Thanks
+
+Thanks to @sqren for starting this project!
+
 ## License
 
 ISC. Copyright (c) 2016, [Tradeshift](https://github.com/Tradeshift).
