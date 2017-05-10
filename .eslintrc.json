@@ -8,10 +8,20 @@
 		"dot-notation": "error",
 		"guard-for-in": "error",
 		"handle-callback-err": "error",
-		"no-empty": ["error", { "allowEmptyCatch": true }],
+		"no-empty": [
+			"error",
+			{
+				"allowEmptyCatch": true
+			}
+		],
 		"no-loop-func": "error",
 		"no-script-url": "error",
 		"no-tabs": "off",
+		"quotes": [
+			"error",
+			"single",
+			"avoid-escape"
+		],
 		"standard/computed-property-even-spacing": "off"
 	}
 }
