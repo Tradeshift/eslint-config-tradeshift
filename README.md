@@ -4,6 +4,18 @@
 [![downloads][downloads-image]][downloads-url]
 [![peerDependencies][peerdeps-image]][peerdeps-url]
 
+[![semantic-release][semantic-release-img]][semantic-release-url]
+[![Commitizen friendly][commitizen-friendly-img]][commitizen-friendly-url]
+
+
+[commitizen-friendly-img]:
+https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[commitizen-friendly-url]:
+http://commitizen.github.io/cz-cli/
+[semantic-release-img]:
+https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-url]:
+https://github.com/semantic-release/semantic-release
 [travis-image]: https://travis-ci.org/Tradeshift/eslint-config-tradeshift.svg?branch=master
 [travis-url]: https://travis-ci.org/Tradeshift/eslint-config-tradeshift
 [npm-image]: https://img.shields.io/npm/v/eslint-config-tradeshift.svg
