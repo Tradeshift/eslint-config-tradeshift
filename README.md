@@ -17,23 +17,23 @@
 
 ## Install
 
-```bash
-npm install eslint-config-tradeshift
+Install eslint-config-tradeshift:
+
+```
+$ npm install --save-dev eslint-config-tradeshift
 ```
 
-## Usage
+Then, add eslint-config-tradeshift to the "extends" array in your `.eslintrc.*`
+file. Make sure to put it **last,** so it gets the chance to override other
+configs.
 
-Shareable configs are designed to work with the `extends` feature of `.eslintrc` files.
-You can learn more about
-[Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the
-official ESLint website.
-
-Just simply add `"extends": "tradeshift"` to your .eslintrc
-
-    *Note: We omitted the `eslint-config-` prefix since it is automatically assumed by ESLint.*
-
-    You can override settings from the shareable config by adding them directly into your
-    `.eslintrc` file.
+```json
+{
+  "extends": [
+    "tradeshift"
+  ]
+}
+```
 
 ## Thanks
 
