@@ -1,8 +1,6 @@
 {
-	"extends": [
-		"standard",
-		"prettier"
-	],
+	"parser": "babel-eslint",
+	"extends": ["standard", "prettier"],
 	"rules": {
 		"block-scoped-var": "error",
 		"dot-notation": "error",
@@ -17,11 +15,7 @@
 		"no-loop-func": "error",
 		"no-script-url": "error",
 		"no-tabs": "off",
-		"quotes": [
-			"error",
-			"single",
-			"avoid-escape"
-		],
+		"quotes": ["error", "single", "avoid-escape"],
 		"standard/computed-property-even-spacing": "off"
 	}
 }

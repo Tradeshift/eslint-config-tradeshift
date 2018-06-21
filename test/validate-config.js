@@ -9,8 +9,17 @@ test('load config in eslint to validate all rule syntax is correct', function(t)
 		configFile: '.eslintrc.json'
 	});
 
-	var code = 'var foo = 1;\nvar bar = function() {};\nbar(foo);\n';
+	var code = `
+	var foo = 1;
+	var bar = function() {};
+	bar(foo);
 
-	t.equal(cli.executeOnText(code).errorCount, 0);
+	class MyClass {
+		static propTypes = {}
+	}
+	bar(new MyClass());
+	`;
+
+	t.deepEqual(cli.executeOnText(code).results[0].messages, []);
 	t.end();
 });
