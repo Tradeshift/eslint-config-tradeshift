@@ -1,14 +1,15 @@
 {
 	"name": "eslint-config-tradeshift",
 	"description": "Javascript Tradeshift Style - ESLint Shareable Config",
-	"version": "0.0.0-semantically-released",
-	"author": "Tradeshift <noreply@tradeshift.com>",
-	"contributors": [
-		"Daniel Spitzer <dsp@tradeshift.com>",
-		"Jacob Wejendorp <jwe@tradeshift.com>"
-	],
-	"bugs": {
-		"url": "https://github.com/Tradeshift/eslint-config-tradeshift/issues"
+	"scripts": {
+		"test": "tape test/*.js",
+		"lint": "eslint .",
+		"prettier-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+		"travis-deploy-once": "travis-deploy-once",
+		"semantic-release": "semantic-release"
+	},
+	"peerDependencies": {
+		"eslint": "5.x.x"
 	},
 	"dependencies": {
 		"babel-eslint": "8.2.6",
@@ -19,14 +20,25 @@
 		"eslint-plugin-promise": "3.8.0",
 		"eslint-plugin-standard": "3.1.0"
 	},
-	"peerDependencies": {
-		"eslint": "5.x.x"
-	},
 	"devDependencies": {
 		"eslint": "5.1.0",
-		"tape": "4.9.1"
+		"tape": "4.9.1",
+		"semantic-release": "^15.7.1",
+		"travis-deploy-once": "^5.0.1"
 	},
-	"homepage": "https://github.com/Tradeshift/eslint-config-tradeshift",
+	"version": "0.0.0-semantically-released",
+	"main": "index.js",
+	"repository": "github:Tradeshift/eslint-config-tradeshift",
+	"author": "Tradeshift <noreply@tradeshift.com>",
+	"contributors": [
+		"Daniel Spitzer <dsp@tradeshift.com>",
+		"Jacob Wejendorp <jwe@tradeshift.com>"
+	],
+	"bugs": {
+		"url": "https://github.com/Tradeshift/eslint-config-tradeshift/issues"
+	},
+	"homepage": "https://github.com/Tradeshift/eslint-config-tradeshift#readme",
+	"license": "ISC",
 	"keywords": [
 		"JavaScript Tradeshift Style",
 		"check",
@@ -54,16 +66,5 @@
 		"tradeshift",
 		"es6",
 		"es2016"
-	],
-	"license": "ISC",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Tradeshift/eslint-config-tradeshift.git"
-	},
-	"scripts": {
-		"test": "tape test/*.js",
-		"lint": "eslint .",
-		"prettier-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
-	}
+	]
 }
