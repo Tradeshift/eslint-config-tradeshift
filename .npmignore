@@ -1,2 +1,6 @@
 test
-.*
+.editorconfig
+.gitignore
+.npmignore
+.nvmrc
+.travis.yml
