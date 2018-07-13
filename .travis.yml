@@ -1,3 +1,4 @@
+dist: trusty
 sudo: false
 language: node_js
 cache:
@@ -5,10 +6,11 @@ cache:
     - ~/.npm
 notifications:
   email: false
-node_js: '8'
-install: npm install
-script: npm test
+before_install:
+  - npm i -g npm@latest
 after_success:
-  - npx -p semantic-release@7 -c "semantic-release pre && npm publish && semantic-release post"
+  - npm run travis-deploy-once "npm run semantic-release"
 branches:
-  only: master
+  only:
+    - master
+    - /^greenkeeper.*$/
