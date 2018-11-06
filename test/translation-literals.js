@@ -26,12 +26,20 @@ ruleTester.run('translation-literals', rule, {
 
 	invalid: [
 		{
-			code: 't(`I have ${count} oranges`);', // eslint-ignore
+			code: 't(1);',
+			errors: [{ message: 'Invalid argument types for t' }]
+		},
+		{
+			code: 't(`I have ${count} oranges`);', // eslint-disable-line
 			errors: [{ message: 'Expected Literal, got TemplateLiteral' }]
 		},
 		{
 			code: 't(variable);',
 			errors: [{ message: 'Expected Literal, got Identifier' }]
+		},
+		{
+			code: 't();',
+			errors: [{ message: 'Empty translations are not allowed' }]
 		}
 	]
 });

@@ -31,7 +31,10 @@ module.exports = {
 		const functions = context.options.functions || {
 			t: {
 				arguments: [{ type: 'Literal' }, { type: 'ObjectExpression' }, { type: 'Literal' }],
-				allowEmpty: false
+				allowEmpty: false,
+				validateArgs(args) {
+					return typeof args[0].value === 'string';
+				}
 			}
 		}
 
@@ -47,7 +50,7 @@ module.exports = {
 				if (!callArgs.length && !fn.allowEmpty) {
 					return context.report({
 						node: call.callee,
-						message: 'Empty translation call, '
+						message: 'Empty translations are not allowed'
 					});
 				}
 				callArgs.forEach((arg, i) => {
@@ -58,6 +61,11 @@ module.exports = {
 						context.report({
 							node: call.callee,
 							message: `Expected ${valid[invalidKey]}, got ${arg[invalidKey]}`
+						});
+					} else if(fn.validateArgs && !fn.validateArgs(callArgs)) {
+						context.report({
+							node: call.callee,
+							message: `Invalid argument types for ${call.callee.name}`
 						});
 					}
 				});
