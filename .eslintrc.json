@@ -18,6 +18,7 @@
 		"quotes": ["error", "single", "avoid-escape"],
 		"standard/computed-property-even-spacing": "off",
 		"standard/array-bracket-even-spacing": "off",
-		"standard/object-curly-even-spacing": "off"
+		"standard/object-curly-even-spacing": "off",
+		"no-restricted-imports": ["error", { "paths": [{ "name": "q", "message": "Use native Promises instead"	}] }]
 	}
 }
