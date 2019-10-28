@@ -9,7 +9,7 @@
 		"semantic-release": "semantic-release"
 	},
 	"peerDependencies": {
-		"eslint": "5.x.x"
+		"eslint": ">= 5"
 	},
 	"dependencies": {
 		"babel-eslint": "^10.0.3",
