@@ -39,13 +39,19 @@ Then, add eslint-config-tradeshift to the "extends" array in your `.eslintrc.*`
 file. Make sure to put it **last,** so it gets the chance to override other
 configs.
 
+Expected default configuration for a typescript project:
+
 ```json
 {
-  "extends": [
-    "tradeshift"
-  ]
+	"extends": [
+		"eslint-config-tradeshift",
+		"eslint-config-tradeshift/jest",
+		"eslint-config-tradeshift/typescript"
+	]
 }
 ```
+
+The configuration options are based on eslint-config-react-app.
 
 ## Thanks
 
@@ -53,4 +59,4 @@ Thanks to @sqren for starting this project!
 
 ## License
 
-ISC. Copyright (c) 2018, [Tradeshift](https://github.com/Tradeshift).
+ISC. Copyright (c) 2019, [Tradeshift](https://github.com/Tradeshift).
