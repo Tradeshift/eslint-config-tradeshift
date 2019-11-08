@@ -6,7 +6,13 @@ test('load config in eslint to validate all rule syntax is correct', function(t)
 
 	var cli = new CLIEngine({
 		useEslintrc: false,
-		configFile: '.eslintrc.json'
+		baseConfig: {
+			extends: [
+				require.resolve('../'),
+				require.resolve('../jest'),
+				require.resolve('../typescript')
+			]
+		}
 	});
 
 	var code = `
@@ -20,6 +26,7 @@ test('load config in eslint to validate all rule syntax is correct', function(t)
 	bar(new MyClass());
 	`;
 
-	t.deepEqual(cli.executeOnText(code).results[0].messages, []);
+	t.deepEqual(cli.executeOnText(code, 'config.js').results[0].messages, []);
+	t.deepEqual(cli.executeOnText(code, 'config.ts').results[0].messages, []);
 	t.end();
 });

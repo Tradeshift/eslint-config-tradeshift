@@ -12,6 +12,8 @@
 		"eslint": ">= 5"
 	},
 	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^2.6.1",
+		"@typescript-eslint/parser": "^2.6.1",
 		"babel-eslint": "^10.0.3",
 		"eslint-config-prettier": "^6.5.0",
 		"eslint-config-standard": "^14.1.0",
@@ -25,10 +27,14 @@
 		"eslint": "^6.6.0",
 		"semantic-release": "^15.13.28",
 		"tape": "^4.11.0",
-		"travis-deploy-once": "^5.0.11"
+		"travis-deploy-once": "^5.0.11",
+		"typescript": "^3.7.2"
 	},
 	"version": "0.0.0-semantically-released",
 	"main": "index.js",
+	"eslintConfig": {
+		"extends": "./index.js"
+	},
 	"repository": "github:Tradeshift/eslint-config-tradeshift",
 	"author": "Tradeshift <noreply@tradeshift.com>",
 	"contributors": [
