@@ -15,7 +15,6 @@ module.exports = {
 		'no-loop-func': 'error',
 		'no-script-url': 'error',
 		'no-tabs': 'off',
-		quotes: ['error', 'single', 'avoid-escape'],
 		'standard/computed-property-even-spacing': 'off',
 		'standard/array-bracket-even-spacing': 'off',
 		'standard/object-curly-even-spacing': 'off',
