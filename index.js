@@ -2,6 +2,9 @@ module.exports = {
 	parser: 'babel-eslint',
 	extends: ['standard', 'prettier'],
 	rules: {
+		'standard/computed-property-even-spacing': 'off',
+		'standard/array-bracket-even-spacing': 'off',
+		'standard/object-curly-even-spacing': 'off',
 		'block-scoped-var': 'error',
 		'dot-notation': 'error',
 		'guard-for-in': 'error',
@@ -9,18 +12,16 @@ module.exports = {
 		'no-empty': [
 			'error',
 			{
-				allowEmptyCatch: true
-			}
+				allowEmptyCatch: true,
+			},
 		],
 		'no-loop-func': 'error',
 		'no-script-url': 'error',
 		'no-tabs': 'off',
-		'standard/computed-property-even-spacing': 'off',
-		'standard/array-bracket-even-spacing': 'off',
-		'standard/object-curly-even-spacing': 'off',
+		'no-prototype-builtins': 'off',
 		'no-restricted-imports': [
 			'error',
-			{ paths: [{ name: 'q', message: 'Use native Promises instead' }] }
-		]
-	}
+			{ paths: [{ name: 'q', message: 'Use native Promises instead' }] },
+		],
+	},
 };
