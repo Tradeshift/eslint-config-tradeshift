@@ -1,0 +1,14 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eslint-config-tradeshift
+  description: Common eslint config for JS tradeshift style.
+  annotations:
+    github.com/project-slug: tradeshift/eslint-config-tradeshift
+  tags:
+    - npm
+spec:
+  type: library
+  lifecycle: production
+  owner: group:app-enablement
