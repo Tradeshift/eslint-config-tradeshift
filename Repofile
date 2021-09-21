@@ -1,0 +1,8 @@
+{
+	"maintainers": [
+		"Developer productivity"
+	],
+	"checks": [
+		"npm test (14)"
+	]
+}
