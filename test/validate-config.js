@@ -1,10 +1,8 @@
-var eslint = require('eslint');
-var test = require('tape');
+const { ESLint } = require('eslint');
+const test = require('tape');
 
-test('load config in eslint to validate all rule syntax is correct', function(t) {
-	var CLIEngine = eslint.CLIEngine;
-
-	var cli = new CLIEngine({
+test('load config in eslint to validate all rule syntax is correct', async function(t) {
+	const eslint = new ESLint({
 		useEslintrc: false,
 		baseConfig: {
 			extends: [
@@ -15,9 +13,9 @@ test('load config in eslint to validate all rule syntax is correct', function(t)
 		}
 	});
 
-	var code = `
-	var foo = 1;
-	var bar = function() {};
+	const code = `
+	const foo = 1;
+	const bar = function() {};
 	bar(foo);
 
 	class MyClass {
@@ -26,7 +24,10 @@ test('load config in eslint to validate all rule syntax is correct', function(t)
 	bar(new MyClass());
 	`;
 
-	t.deepEqual(cli.executeOnText(code, 'config.js').results[0].messages, []);
-	t.deepEqual(cli.executeOnText(code, 'config.ts').results[0].messages, []);
+	const resultsJS = await eslint.lintText(code, { filePath: 'config.js' });
+	const resultsTS = await eslint.lintText(code, { filePath: 'config.ts' });
+
+	t.deepEqual(resultsJS[0].messages, []);
+	t.deepEqual(resultsTS[0].messages, []);
 	t.end();
 });
