@@ -11,7 +11,7 @@ module.exports = {
 		'jest/no-test-prefixes': 'error',
 		'jest/prefer-to-contain': 'warn',
 		'jest/prefer-to-have-length': 'warn',
-		'jest/valid-describe': 'error',
+		'jest/valid-describe-callback': 'error',
 		'jest/valid-expect-in-promise': 'error',
 		'jest/consistent-test-it': 'off',
 		'jest/lowercase-name': 'off',
@@ -38,7 +38,7 @@ module.exports = {
 		'jest/no-export': 'error',
 		'jest/no-if': 'error',
 		'jest/no-standalone-expect': 'off',
-		'jest/no-try-expect': 'error',
+		'jest/no-conditional-expect': 'error',
 		'jest/require-top-level-describe': 'off',
 		'jest/prefer-hooks-on-top': 'error'
 	},
