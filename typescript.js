@@ -48,7 +48,10 @@ module.exports = {
 					}
 				],
 				'no-useless-constructor': 'off',
-				'@typescript-eslint/no-useless-constructor': 'warn'
+				'@typescript-eslint/no-useless-constructor': 'warn',
+				// allow overloading via redeclare
+				'no-redeclare': 'off',
+				'@typescript-eslint/no-redeclare': ['error']
 			}
 		}
 	]
