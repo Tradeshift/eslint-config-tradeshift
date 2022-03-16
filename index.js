@@ -1,6 +1,9 @@
 module.exports = {
-	parser: 'babel-eslint',
+	parser: '@babel/eslint-parser',
 	extends: ['standard', 'prettier'],
+	parserOptions: {
+		requireConfigFile: false
+	},
 	rules: {
 		'standard/computed-property-even-spacing': 'off',
 		'standard/array-bracket-even-spacing': 'off',
