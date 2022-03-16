@@ -1,8 +1,11 @@
 module.exports = {
-	parser: '@babel/eslint-parser',
 	extends: ['standard', 'prettier'],
 	parserOptions: {
-		requireConfigFile: false
+		requireConfigFile: false,
+		ecmaVersion: 'latest',
+		ecmaFeatures: {
+			jsx: true,
+		},
 	},
 	rules: {
 		'standard/computed-property-even-spacing': 'off',
