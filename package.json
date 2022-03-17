@@ -72,5 +72,23 @@
 		"tradeshift",
 		"es6",
 		"es2016"
-	]
+	],
+	"prettier": {
+		"printWidth": 80,
+		"tabWidth": 2,
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true,
+		"quoteProps": "as-needed",
+		"jsxSingleQuote": false,
+		"trailingComma": "all",
+		"bracketSpacing": true,
+		"arrowParens": "always",
+		"requirePragma": false,
+		"insertPragma": false,
+		"proseWrap": "preserve",
+		"htmlWhitespaceSensitivity": "css",
+		"vueIndentScriptAndStyle": false,
+		"endOfLine": "lf"
+	}
 }
