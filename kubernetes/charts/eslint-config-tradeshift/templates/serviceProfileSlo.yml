@@ -1,0 +1,25 @@
+apiVersion: linkerd.io/v1alpha2
+kind: ServiceProfile
+metadata:
+    name: {{ .Chart.Name }}.{{ .Release.Namespace }}.svc.cluster.local
+    labels:
+        app: {{ template "eslint-config-tradeshift.name" . }}
+        chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+        release: {{ .Release.Name }}
+        heritage: {{ .Release.Service }}
+        environment: {{ .Values.environment }}
+        site: ""
+        region: ""
+        stackname: ""
+    annotations:
+        team: {{ .Values.team.name }}
+        repository: ""
+spec:
+    deployment: ""
+    team: ""
+    headless: false
+    routes:
+        - name: GET /rest/external/announcements/sent
+          latencySLO:
+            limit: 40ms
+            rate: 97.66%
