@@ -6,7 +6,6 @@ module.exports = {
 		'jest/no-identical-title': 'error',
 		'jest/valid-expect': 'error',
 		'jest/no-alias-methods': 'off',
-		'jest/no-jest-import': 'error',
 		'jest/no-large-snapshots': ['warn', { maxSize: 300 }],
 		'jest/no-test-prefixes': 'error',
 		'jest/prefer-to-contain': 'warn',
