@@ -6,6 +6,10 @@ updates:
       interval: daily
     registries:
       - npm-tradeshift
+    commit-message:
+      prefix: 'fix'
+      prefix-development: 'build'
+      include: 'scope'
 registries:
   npm-tradeshift:
     type: npm-registry
