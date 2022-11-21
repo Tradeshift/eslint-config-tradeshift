@@ -1,8 +1,8 @@
 {
-	"maintainers": [
-		"Developer productivity"
-	],
-	"checks": [
-		"npm test (14)"
-	]
+    "maintainers": [
+        "developer-productivity"
+    ],
+    "checks": [
+        "npm test (14)"
+    ]
 }
