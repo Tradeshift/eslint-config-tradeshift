@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build:
+  sonar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -23,4 +23,4 @@ jobs:
           client-cert: ${{ secrets.MTLS_CERT }}
           client-key: ${{ secrets.MTLS_KEY }}
           token: ${{ secrets.SONAR_TOKEN }}
-          host: 'https://sonar.ts.sv'
+          host: "https://sonar.prod.tools.tradeshift.net"
