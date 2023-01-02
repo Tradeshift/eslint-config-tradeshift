@@ -10,6 +10,9 @@ updates:
       prefix: 'fix'
       prefix-development: 'build'
       include: 'scope'
+    ignore:
+      - dependency-name: '*'
+        update-types: [version-update:semver-minor, version-update:semver-patch]
 registries:
   npm-tradeshift:
     type: npm-registry
