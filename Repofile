@@ -1,6 +1,6 @@
 {
     "maintainers": [
-        "developer-productivity"
+        "sre"
     ],
     "checks": [
         "npm test (14)"
