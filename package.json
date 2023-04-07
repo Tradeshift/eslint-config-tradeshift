@@ -24,7 +24,7 @@
 	"devDependencies": {
 		"eslint": "8.37.0",
 		"tape": "5.6.3",
-		"typescript": "5.0.3"
+		"typescript": "5.0.4"
 	},
 	"version": "0.0.0-semantically-released",
 	"main": "index.js",
