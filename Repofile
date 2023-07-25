@@ -3,5 +3,7 @@
         "sre"
     ],
     "checks": [
+        "npm test (16)",
+				"npm test (18)"
     ]
 }
