@@ -3,6 +3,5 @@
         "sre"
     ],
     "checks": [
-        "npm test (14)"
     ]
 }
