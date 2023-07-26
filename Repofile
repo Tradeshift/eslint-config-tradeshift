@@ -1,5 +1,8 @@
 {
     "maintainers": [
         "sre"
-    ]
+    ],
+		"checks": [
+			"sonar"
+		]
 }
