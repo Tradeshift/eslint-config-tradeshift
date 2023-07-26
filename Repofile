@@ -1,7 +1,5 @@
 {
     "maintainers": [
         "sre"
-    ],
-    "checks": [
     ]
 }
