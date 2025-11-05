@@ -42,6 +42,6 @@ module.exports = {
 		'jest/prefer-hooks-on-top': 'error'
 	},
 	env: {
-		'jest/globals': true
+		'jest': true
 	}
 };
