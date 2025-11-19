@@ -1,0 +1,21 @@
+name: npm publish
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  pr_commented:
+    if: github.event.comment.body == 'npm publish'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org/'
+      - run: npm ci
+      - run: npm run build
+      - run: npm version --no-git-tag-version 0.0.0-$(git rev-parse HEAD)
+      - run: npm publish --tag=pre
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
