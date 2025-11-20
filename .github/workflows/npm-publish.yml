@@ -5,17 +5,63 @@ on:
 
 jobs:
   pr_commented:
-    if: github.event.comment.body == 'npm publish'
+    # Only run on PRs and when comment is 'npm publish'
+    if: github.event.issue.pull_request && github.event.comment.body == 'npm publish'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v6
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v5
+        
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v6
         with:
-          node-version: 18
+          node-version: 22
           registry-url: 'https://registry.npmjs.org/'
-      - run: npm ci
-      - run: npm run build
-      - run: npm version --no-git-tag-version 0.0.0-$(git rev-parse HEAD)
-      - run: npm publish --tag=pre
+          
+      - name: 📥 Download deps
+        run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
+      - name: ▶️ Run tests
+        run: npm test
+        
+      - name: 🏗 Run build script
+        run: npm run --if-present build
+        
+      - name: 📦 Set version and publish
+        run: |
+          npm version --no-git-tag-version 0.0.0-$(git rev-parse HEAD)
+          npm publish --tag=pre
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Comment success
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+            const version = packageJson.version;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `✅ Test version published: \`${version}\`
+              
+              Install with: \`npm install eslint-config-tradeshift@${version}\``
+            });
+
+      - name: Comment failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `❌ Test version publishing failed. Check the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.`
+            });
