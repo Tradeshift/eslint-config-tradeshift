@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        node: [16, 18]
+        node: [20, 22]
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v5
@@ -48,7 +48,7 @@ jobs:
       - name: ⎔ Setup node
         uses: actions/setup-node@v6
         with:
-          node-version: 18
+          node-version: 22
           # cache requires lockfile
           # cache: "npm"
 
