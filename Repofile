@@ -1,6 +1,7 @@
 {
     "maintainers": [
-        "sre"
+        "sre",
+        "legacy-commiters"
     ],
     "checks": [
         "npm test (16)",
