@@ -22,8 +22,8 @@
 		"eslint-plugin-promise": "^6.0.0"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "8.47.0",
-		"@typescript-eslint/parser": "8.47.0",
+		"@typescript-eslint/eslint-plugin": "8.48.0",
+		"@typescript-eslint/parser": "8.48.0",
 		"eslint": "8.57.1",
 		"tape": "5.9.0",
 		"typescript": "5.9.3"
