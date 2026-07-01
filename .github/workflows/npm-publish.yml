@@ -20,7 +20,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
           
       - name: 📥 Download deps
-        run: npm ci
+        run: npm ci --ignore-scripts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           
@@ -51,7 +51,7 @@ jobs:
               repo: context.repo.repo,
               body: `✅ Test version published: \`${version}\`
               
-              Install with: \`npm install eslint-config-tradeshift@${version}\``
+              Install with: \`npm install --ignore-scripts eslint-config-tradeshift@${version}\``
             });
 
       - name: Comment failure
