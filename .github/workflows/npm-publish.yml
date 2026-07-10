@@ -5,8 +5,16 @@ on:
 
 jobs:
   pr_commented:
-    # Only run on PRs and when comment is 'npm publish'
-    if: github.event.issue.pull_request && github.event.comment.body == 'npm publish'
+    # Only run on PRs, when the comment is 'npm publish', and only when the
+    # commenter is a Tradeshift org member or the repo owner. Without the
+    # author_association guard, any GitHub user could comment on a fork PR to
+    # run its code via `npm ci` and publish it to the public npm registry with
+    # the org NPM_TOKEN. COLLABORATOR is excluded because it also matches
+    # outside (non-org) collaborators.
+    if: >-
+      github.event.issue.pull_request
+      && github.event.comment.body == 'npm publish'
+      && contains(fromJSON('["OWNER", "MEMBER"]'), github.event.comment.author_association)
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
