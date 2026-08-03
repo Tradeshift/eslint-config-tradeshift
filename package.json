@@ -7,8 +7,8 @@
 		"prettier-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": "^8.60.0",
-		"@typescript-eslint/parser": "^8.60.0",
+		"@typescript-eslint/eslint-plugin": "^8.65.0",
+		"@typescript-eslint/parser": "^8.65.0",
 		"eslint": "^8.57.0 || ^9.0.0"
 	},
 	"dependencies": {
@@ -22,8 +22,8 @@
 		"eslint-plugin-promise": "^6.0.0"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "8.63.0",
-		"@typescript-eslint/parser": "8.63.0",
+		"@typescript-eslint/eslint-plugin": "8.65.0",
+		"@typescript-eslint/parser": "8.65.0",
 		"eslint": "8.57.1",
 		"tape": "5.10.2",
 		"typescript": "6.0.3"
